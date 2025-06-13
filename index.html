@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TheoOS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<script>
+
+    function updateTime() {
+        var currentTime = new Date().toLocaleString();
+        var timeText = document.querySelector("#timeElement");
+        timeText.innerHTML = currentTime;
+    }
+    setInterval(updateTime, 1000);
+
+</script> 
+<style>
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+</style>
+</head>
+<body style="font-family: quicksand; height: 100vh; background-image: url(bg.png); background-size: cover; background-repeat: no-repeat; margin: 0px">
+
+  <div
+    style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.125); color: #fff; justify-content: space-between; gap: 32px;">
+        <p
+          style="margin-left: 16px; font-weight: 700; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+            TheoOS
+        </p>
+        <p style="margin-left: 16px; background-color: rgba(256, 256, 256, 0.25); padding: 4px 12px; border-radius: 16px;">
+            ☀️ Always Learning ☁️
+        </p>
+        <p id="timeElement"
+          style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+            6/21/2023 3:41 PM
+        </p>
+  </div>
+    <div style="position: absolute; top: 50%; left: 50%; padding: 16px; border: solid; width: 400px; border-radius: 16px; transform: translate(-50%, -50%); background: #ffffff">
+    <img style="width: 64px; height: 64px; border-radius: 16px;" src="pfp.jpg" />
+    <h1 style="font-family: quicksand; color: rgb(0, 4, 255);">TheoOS</h1>
+    <p style="font-family: quicksand;">TheoOS is a <s>feature-rich</s> <u>feature-limited</u> <abbr title="Operating System">OS</abbr> to answer the unanswerable question of <i>Who is Theo?</i></p>
+    <a style="font-family: quicksand;" href="https://github.com/trose2012/WebOS/">GitHub</a>
+    </div>
+  </body>
+
+</html>
